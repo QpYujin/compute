@@ -16,3 +16,9 @@ services:
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
       - /data0:/data0
+    logging:
+      driver: "awslogs"
+      options:
+        awslogs-region: "us-east-1"
+        awslogs-group: "cloudoptim"
+        awslogs-stream: "compute-1"
