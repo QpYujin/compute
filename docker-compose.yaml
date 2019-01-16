@@ -16,6 +16,8 @@ services:
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
       - /data0:/data0
+    extra_hosts:
+      - "is-en-conductor-0.en-cond:34.236.58.203"
     logging:
       driver: "awslogs"
       options:
