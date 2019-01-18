@@ -1,7 +1,7 @@
 version: "3"
 services:
   compute:
-    image: 921992833788.dkr.ecr.us-west-2.amazonaws.com/compute:8.23.2.1
+    image: 921992833788.dkr.ecr.us-west-2.amazonaws.com/compute:9.2.1
     ports:
       - "10000-10999:10000-10999"
       - "11000-11999:11000-11999"
